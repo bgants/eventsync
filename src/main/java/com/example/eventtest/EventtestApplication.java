@@ -20,7 +20,7 @@ public class EventtestApplication {
 
 @Slf4j
 @Component
-class UserSrvc implements CommandLineRunner {
+class UserFactory implements CommandLineRunner {
   @Autowired
   UserService userService;
 

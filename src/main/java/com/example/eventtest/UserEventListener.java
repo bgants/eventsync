@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 public class UserEventListener {
-
     @EventListener
     public void processUserCreatedEvent(UserCreatedEvent event) {
         log.info("User event processed" + event.toString());
