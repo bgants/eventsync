@@ -3,7 +3,6 @@ package com.example.eventtest;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.context.event.ApplicationContextEvent;
 import org.springframework.stereotype.Service;
 
 @Service

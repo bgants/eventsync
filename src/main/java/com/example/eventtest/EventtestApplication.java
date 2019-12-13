@@ -20,13 +20,14 @@ public class EventtestApplication {
 
 @Slf4j
 @Component
-class UserFactory implements CommandLineRunner {
+class UserSrvc implements CommandLineRunner {
   @Autowired
   UserService userService;
 
   @Override
   public void run(String... args) throws Exception {
-    User newUser = userService.addUser(new User("Bob"));
-    log.info("New User saved " + newUser);
+    for (int i = 1; i <= 200; i++)  {
+      log.info("New User saved " + userService.addUser(new User("Bob-" + i)));
+    }
   }
 }

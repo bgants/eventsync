@@ -17,7 +17,7 @@ public class User {
     private String name;
 
     public User(String name) {
+        log.info("Set user " + name);
         this.name = name;
-        log.info("Set user " + this.name);
     }
 }
